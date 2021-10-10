@@ -1,2 +1,2 @@
-# LoL-Improved-Practice-Tool
+# LoL-Training-Tool
 Fan-made league of legends project
