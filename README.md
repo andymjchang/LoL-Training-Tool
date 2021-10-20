@@ -1,2 +1,3 @@
 # LoL-Training-Tool
-Fan-made league of legends project
+
+GDscript code is contained in the .gd files.
