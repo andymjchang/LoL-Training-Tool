@@ -2,13 +2,7 @@
 League of Legends fan project created by Andy Chang\
 If you're an admission officer reading this you are very cool :) 
 
-I think you should use an
-`<addr>` element here instead.
-
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
+##Shaders
 
 
 3d Model Credit:
