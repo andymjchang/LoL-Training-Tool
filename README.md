@@ -26,7 +26,7 @@ float worley2(vec2 p) {
 	return dist;
 }
 ```
-The "grass" is created by 1500 triangle meshes that rotate according to the wind shader noise. 
+The "grass" is created by 1500 triangle meshes that rotate according to the wind shader noise. The rebuild() function is called during initialization and every time any material or parameter is changed.
 ```
 func rebuild():
 	if !multimesh:
