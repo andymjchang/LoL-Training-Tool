@@ -3,7 +3,7 @@ League of Legends fan project created by Andy Chang\
 If you're an admission officer reading this you are very cool :) 
 
 ## Shaders
-I wrote a custom shader to create river bushes that sway back and forth in the wind. The wind effect is created using the worley noise type.
+I wrote a custom shader to create river bushes that sway back and forth in the wind. The wind effect is created using the worley noise type. The effect is based on 
 ```
 vec2 random2(vec2 p) {
 	return fract(sin(vec2(
@@ -48,6 +48,9 @@ func rebuild():
 			deg2rad(rand_range(sway_yaw.x, sway_yaw.y))
 		))
 ```
+Resources:
+-[Godot Interactive Displacement](https://www.youtube.com/watch?v=D_G9ZFX69UQ)
+-
 3d Model Credit:
 - https://sketchfab.com/3d-models/for-study-only-summoner-rift-3d-export-ac0a9c6676e34d1ebb184d8e93443c77
 - https://github.com/Jochem-W/LeagueBulkConvert/releases
