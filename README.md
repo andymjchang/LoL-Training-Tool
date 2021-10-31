@@ -3,7 +3,7 @@ League of Legends fan project created by Andy Chang\
 If you're an admission officer reading this you are very cool :) 
 
 ## Shaders
-I wrote a custom shader to create river bushes that sway back and forth in the wind. The wind effect is created using the worley noise type. The effect is based on 
+I wrote a custom shader to create river bushes that sway back and forth in the wind. The wind effect is created using the worley noise type. The stylied effect is based on games like BotW.
 ```
 vec2 random2(vec2 p) {
 	return fract(sin(vec2(
@@ -26,7 +26,7 @@ float worley2(vec2 p) {
 	return dist;
 }
 ```
-The "grass" is created by 1500 triangle meshes that rotate according to the wind shader noise. The rebuild() function is called during initialization and every time any material or parameter is changed.
+The "grass" is created by 1500 triangle meshes that rotate according to the wind shader noise. 
 ```
 func rebuild():
 	if !multimesh:
