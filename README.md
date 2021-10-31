@@ -3,7 +3,7 @@ League of Legends fan project created by Andy Chang\
 If you're an admission officer reading this you are very cool :) 
 
 ## Shaders
-I wrote a custom shader to create river bushes that sway back and forth in the wind. The wind effect is created using the worley noise type. The stylied effect is based on games like BotW.
+I wrote a custom shader to create river bushes that sway back and forth in the wind. The wind effect is created using the worley noise type, inspired by games like BotW.
 ```
 vec2 random2(vec2 p) {
 	return fract(sin(vec2(
