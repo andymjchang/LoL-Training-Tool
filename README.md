@@ -6,8 +6,7 @@ If you're an admission officer reading this you are very cool :)
 
 
 ## Shaders
-![](https://media.giphy.com/media/DmWhN9rTboOFTb6jXc/giphy.gif)
-
+![](https://media.giphy.com/media/DmWhN9rTboOFTb6jXc/giphy.gif) \
 I wrote a custom shader to create river bushes that sway back and forth in the wind. The wind effect is created using the worley noise type, inspired by games like BotW.
 ```
 vec2 random2(vec2 p) {
