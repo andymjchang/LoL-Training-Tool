@@ -3,7 +3,21 @@ League of Legends fan project created by Andy Chang\
 If you're an admission officer reading this you are very cool :) 
 
 ## Pathfinding
-
+![](https://media.giphy.com/media/qZdbg1yiBiPd8aM4zZ/giphy.gif) \
+I used a NavMesh built from the intersection of a plane mesh representing the walkable ground and the environment mesh, which builds an array of walkable nodes.
+```
+func move_to(target_pos):
+	path = nav.get_simple_path(global_transform.origin, target_pos)
+	path_index = 0
+		
+func _physics_process(delta):
+	if path_index < path.size():
+		var move_vec = (path[path_index] - global_transform.origin)
+		if move_vec.length() < 0.1:
+			path_index += 1
+		else:
+			move_and_slide(move_vec.normalized() * move_speed, Vector3(0, 1, 0))
+```
 
 ## Shaders
 ![](https://media.giphy.com/media/DmWhN9rTboOFTb6jXc/giphy.gif) \
