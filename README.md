@@ -6,6 +6,14 @@ If you're an admission officer reading this you are very cool :)
 ![](https://media.giphy.com/media/qZdbg1yiBiPd8aM4zZ/giphy.gif) \
 I used a NavMesh built from the intersection of a plane mesh representing the walkable ground and the environment mesh, which builds an array of walkable nodes.
 ```
+func move_unit(m_pos):
+	var result = raycast_from_mouse(m_pos, 1)
+	if result:
+		get_tree().call_group("champion", "move_to", result.position)
+		get_tree().call_group("champion", "look", result.position)
+```
+When a right mouse click is detected, it calls a function to get a raycast from the mouse position relative to the viewport of the camera. It only detects collisions on the 1 layer which represents the ground mesh.
+```
 func move_to(target_pos):
 	path = nav.get_simple_path(global_transform.origin, target_pos)
 	path_index = 0
@@ -18,6 +26,7 @@ func _physics_process(delta):
 		else:
 			move_and_slide(move_vec.normalized() * move_speed, Vector3(0, 1, 0))
 ```
+It uses the NavMesh nodes like grid cells for the pathfinding algorithm and creates a vector between the next cell/node in the path and the current player position. The vector is normalized and then used to move the player position.
 
 ## Shaders
 ![](https://media.giphy.com/media/DmWhN9rTboOFTb6jXc/giphy.gif) \
