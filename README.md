@@ -1,6 +1,5 @@
 # LoL-Training-Tool
 League of Legends fan project created by Andy Chang\
-If you're an admission officer reading this you are very cool :) 
 
 ## Pathfinding
 ![](https://media.giphy.com/media/qZdbg1yiBiPd8aM4zZ/giphy.gif) \
