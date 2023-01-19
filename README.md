@@ -1,5 +1,5 @@
 # LoL-Training-Tool
-League of Legends fan project created by Andy Chang
+League of Legends student project
 
 
 ![](https://media.giphy.com/media/qZdbg1yiBiPd8aM4zZ/giphy.gif) \
